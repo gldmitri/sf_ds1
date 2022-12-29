@@ -12,10 +12,10 @@ def new_predict(number:int=1) -> int:
 
     count = 0
 
-    b1 = 1
-    b2 = 101
+    b1 = 1     # нижняя граница интервала (>=)
+    b2 = 101   # верхняя граница интервала (<)
     
-    predict_number = b1 + (b2 - b1) // 2
+    predict_number = b1 + (b2 - b1) // 2  # середина интервала
 
     while True:
         count += 1
