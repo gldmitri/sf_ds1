@@ -10,6 +10,9 @@ def new_predict(number:int=1) -> int:
         int: Число попыток
     """
 
+    if number < 1 or number > 100:
+        raise ValueError('Ошибка в функции new_predict: параметр number вышел за границы диапазона [1;100]')
+
     count = 0
 
     b1 = 1     # нижняя граница интервала (>=)
